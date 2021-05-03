@@ -8,7 +8,7 @@
 //Chiediamo all utente PARI o DISPARI:
 var pariDispari = prompt("Scegli PARI o DISPARI").toLowerCase();
 while (!isNaN(pariDispari) || (pariDispari != "pari") && (pariDispari != "dispari")) {
-    var pariDispari = prompt("Scegli PARI o DISPARI");
+    var pariDispari = prompt("Scegli PARI o DISPARI").toLowerCase();
 }
 console.log("Hai scelto:", pariDispari);
 
