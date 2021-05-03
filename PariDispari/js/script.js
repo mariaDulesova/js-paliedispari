@@ -6,29 +6,25 @@
 // Dichiariamo chi ha vinto.
 
 //Chiediamo all utente PARI o DISPARI:
-
-var pariDispari = prompt("Scegli PARI o DISPARI");
-console.log(pariDispari);
-
+var pariDispari = prompt("Scegli PARI o DISPARI").toLowerCase();
 while (!isNaN(pariDispari) || (pariDispari != "pari") && (pariDispari != "dispari")) {
     var pariDispari = prompt("Scegli PARI o DISPARI");
 }
-console.log(pariDispari);
-
+console.log("Hai scelto:", pariDispari);
 
 //Chiediamo all'utente di scegliere il numero tra 1 e 5:
 var numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
 while (numeroUtente<1 || numeroUtente > 5 || isNaN(numeroUtente)) {
     var numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
 }
-console.log(numeroUtente);
+console.log("Hai scelto:", numeroUtente);
 
 //Creiamo una funzione che genera un numero random nell'intervallo MIN-MAX (in questo caso 1 e 5)
 function getRandomNumber(min, max) {
     return Math.floor(Math.random()*(max-min+1))+min;
 }
 var numeroComputer = getRandomNumber(1,5);
-console.log(numeroComputer);
+console.log("Il numero generato dal computer:", numeroComputer);
 
 //Creiamo una funzione per verificare se la somma tra i due numero e' pari
 function verificaNumero (num1, num2) {
@@ -39,7 +35,7 @@ function verificaNumero (num1, num2) {
     }
 }
 var somma = verificaNumero(numeroUtente, numeroComputer);
-console.log(somma);
+console.log("La somma dei due numeri:", somma);
 
 //Dichiariamo il vincitore
 if (somma == pariDispari) {
