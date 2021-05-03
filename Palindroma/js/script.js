@@ -23,20 +23,20 @@ if (parolaUtente == invertireParola(parolaUtente)){
 }
 
 // Soluzione 2
-var parolaUtente = prompt("Inserisci una parola");
-console.log(parolaUtente);
-
-var parolaUtenteArray = parolaUtente.split(""); //virgolette sono importanti!
-console.log(parolaUtenteArray);
-
-var parolaUtenteArrayInvertita = parolaUtenteArray.reverse();
-console.log(parolaUtenteArrayInvertita);
-
-var parolaUtenteInvertita = parolaUtenteArrayInvertita.join(""); //virgolette sono importanti!
-console.log(parolaUtenteInvertita);
-
 function palindroma (parola) {
     return parola == parola.split("").reverse().join("");
 }
 
+var parolaUtente = prompt("Inserisci una parola");
+console.log(parolaUtente);
 console.log(palindroma(parolaUtente));
+
+// var parolaUtenteArray = parolaUtente.split(""); //virgolette sono importanti!
+// console.log(parolaUtenteArray);
+
+// var parolaUtenteArrayInvertita = parolaUtenteArray.reverse();
+// console.log(parolaUtenteArrayInvertita);
+
+// var parolaUtenteInvertita = parolaUtenteArrayInvertita.join(""); //virgolette sono importanti!
+// console.log(parolaUtenteInvertita);
+
