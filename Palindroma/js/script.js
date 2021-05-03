@@ -31,12 +31,15 @@ var parolaUtente = prompt("Inserisci una parola");
 console.log(parolaUtente);
 console.log(palindroma(parolaUtente));
 
+//Funzione SPLIT separa le lettere di una parola trafromando la variabile in un array:
 // var parolaUtenteArray = parolaUtente.split(""); //virgolette sono importanti!
 // console.log(parolaUtenteArray);
 
+//Funzione REVERSE puo' essere applicata solo alle variabili array. Inverte l'ordine delle variabili
 // var parolaUtenteArrayInvertita = parolaUtenteArray.reverse();
 // console.log(parolaUtenteArrayInvertita);
 
+//Funzione JOIN unisce gli elementi di un array in una stringa
 // var parolaUtenteInvertita = parolaUtenteArrayInvertita.join(""); //virgolette sono importanti!
 // console.log(parolaUtenteInvertita);
 
